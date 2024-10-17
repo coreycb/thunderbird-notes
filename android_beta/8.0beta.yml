@@ -18,13 +18,22 @@ release:
 
 notes:
   # New
-  - note: Beta 1 new feature
+  - note: Long note for beta 1 feature
     tag: new
     issues: [111111]
     group: 1
 
   # Fixed
-  - note: Beta 1 bug fix
+  - note: Long note for bug fix 1
+    short_note: Short note for bug fix 1
+    tag: fixed
+    issues: [111111]
+    group: 1
+  - short_note: Short note only for this one
+    tag: fixed
+    issues: [111111]
+    group: 1
+  - note: Long note only for this one
     tag: fixed
     issues: [111111]
     group: 1
