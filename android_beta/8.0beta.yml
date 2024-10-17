@@ -15,6 +15,8 @@ release:
       release_date: '2024-10-07'
     - version: '8.0b3'
       release_date: '2024-10-15'
+    - version: '8.0b4'
+      release_date: '2024-10-21'
 
 notes:
   # New
@@ -58,3 +60,29 @@ notes:
   - note: Enforced email validation for better identity management
     tag: fixed
     group: 3
+
+  # Beta 4
+  # New
+  - note: Long note for feature
+    tag: new
+    group: 4
+
+  # Fixed
+  - note: Long note for bug fix
+    short_note: Short note for bug fix
+    tag: fixed
+    group: 4
+  - short_note: Short note only
+    tag: fixed
+    group: 4
+  - note: Long note only
+    tag: fixed
+    group: 4
+  - short_note: Short note only, for k9 only
+    tag: fixed
+    k9mail_only: true
+    group: 4
+  - note: Long note, for thunderbird only
+    tag: fixed
+    thunderbird_only: true
+    group: 4
