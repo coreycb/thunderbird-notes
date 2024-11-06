@@ -387,3 +387,8 @@ notes:
   - note: Accessibility improvements for the save attachment button.
     tag: fixed
     group: 5
+
+  - note: Thunderbird for Android branding is now available
+    thunderbird_only: true
+    tag: new
+    group: 6
