@@ -55,3 +55,6 @@ notes:
   - note: Could not drag all-day events from one day to another in week view
     tag: fixed
     bugs: [1922944]
+  - note: Could not drag all-day events from one day to another in week view
+    tag: fixed
+    bugs: [1922944]
