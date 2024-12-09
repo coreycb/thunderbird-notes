@@ -15,9 +15,7 @@ notes:
       via in-app purchases (Google Play variant) or through our fundraising page (FOSS
       variant).
     short_note: >
-      K-9 Mail Needs Your Support! You can now support development with financial contributions
-      via in-app purchases (Google Play variant) or through our fundraising page (FOSS
-      variant).
+      K-9 Mail Needs Your Support! You can now support development with financial contributions.
     tag: new
     k9mail_only: true
 
@@ -60,8 +58,7 @@ notes:
       Correct default delete message action for QR-imported accounts. Please check your fetch
       mail settings!
     short_note: >
-      Correct default delete message action for QR-imported accounts. Please check your fetch
-      mail settings!
+      Correct default delete message action for QR-imported accounts.
     tag: fixed
 
   - note: Multiple crashes addressed
