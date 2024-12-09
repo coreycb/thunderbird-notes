@@ -20,7 +20,7 @@ notes:
     k9mail_only: true
 
   - note: Account initials now use the display name, improving customizability
-    short_note: Account initials now use the display name, improving customizability
+    short_note: Account initials now use the display name
     tag: new
 
   - note: Account icons remain in the same position when selected
