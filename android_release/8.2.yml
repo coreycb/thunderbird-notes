@@ -45,10 +45,6 @@ notes:
     short_note: Unified inbox enabled only when multiple accounts are configured
     tag: changed
 
-  - note: Funding text updated to be more engaging and appealing
-    short_note: Funding text updated to be more engaging and appealing
-    tag: changed
-
   # Fixed
   - note: Push service now starts reliably when expected
     short_note: Push service now starts reliably when expected
