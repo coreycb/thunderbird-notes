@@ -147,3 +147,9 @@ notes:
     tag: changed
     thunderbird_only: true
     group: 3
+
+  - note: Messages are now always marked as read during archiving
+    short_note: Messages are now always marked as read during archiving
+    tag: changed
+    thunderbird_only: true
+    group: 3

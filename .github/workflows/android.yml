@@ -1,4 +1,4 @@
----
+name: Validate Android Release Notes
 
 on:
   workflow_dispatch:  # Enables manual trigger
@@ -26,13 +26,16 @@ jobs:
         run: |
           pip install requests pyyaml jinja2
 
-      - name: Render Notes
+      - name: Validate Notes
         shell: bash
         working-directory: notes
         env:
-          BASE_REF: ${{ github.event.pull_request.base.ref }}
+          BRANCH: ${{ github.event.pull_request.base.ref || github.ref }}
         run: |
-          BETA_FILES=$(git diff --name-only origin/$BASE_REF $GITHUB_SHA | grep ^android_beta || true )
+          set -x
+
+          echo "BRANCH=${BRANCH}"
+          BETA_FILES=$(git diff --name-only $BRANCH $GITHUB_SHA | grep ^android_beta || true )
 
           for file in $BETA_FILES
           do
@@ -46,7 +49,7 @@ jobs:
             echo "\`\`\`" | tee -a $GITHUB_STEP_SUMMARY
           done
 
-          RELEASE_FILES=$(git diff --name-only origin/$BASE_REF $GITHUB_SHA | grep ^android_release || true )
+          RELEASE_FILES=$(git diff --name-only $BRANCH $GITHUB_SHA | grep ^android_release || true )
 
           for file in $RELEASE_FILES
           do
