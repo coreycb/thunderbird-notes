@@ -1,7 +1,12 @@
 ---
 
 on:
+  workflow_dispatch:  # Enables manual trigger
   pull_request:
+    paths:
+      - 'android_beta/*.yml'
+      - 'android_release/*.yml'
+  push:
     paths:
       - 'android_beta/*.yml'
       - 'android_release/*.yml'
