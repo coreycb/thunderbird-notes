@@ -1,0 +1,189 @@
+release:
+  release_date: '2026-11-10'
+  text: |
+    **These notes apply to Thunderbird version 161 beta 1 released November 10, 2026.**
+
+    **System Requirements:** [Details](/en-US/thunderbird/160.0beta/system-requirements/)
+
+  import_system_requirements: 153.0beta
+
+  groups:
+    - ' '
+
+notes:
+  # New
+  - note: OpenPGP Key Assistant source links have a Copy Link Location context menu
+    tag: new
+    bugs: [2083706]
+  - note: Unread count badges are available on supported Linux taskbars
+    tag: new
+    bugs: [1551864]
+
+  # Changed
+  - note: Key lookup tries WKD before the Proton keyserver for Proton-hosted domains
+    tag: changed
+    bugs: [2083691]
+  - note: Message filtering continues after an action fails without prompting
+    tag: changed
+    bugs: [2077589]
+  - note: Non-critical folder errors appear as notifications instead of modal dialogs
+    tag: changed
+    bugs: [2057045]
+  - note: OTR chat encryption is disabled by default for profiles that never used it
+    tag: changed
+    bugs: [1909445]
+
+  # Fixed
+  - note: Progress indicators could fail to update during folder operations
+    tag: fixed
+    bugs: [2077861]
+  - note: The Subscribe dialog continued to show Please wait after loading
+    tag: fixed
+    bugs: [2085557]
+  - note: The progress indicator could keep spinning after an Exchange sync ended
+    tag: fixed
+    bugs: [2085621]
+  - note: Accessing offline IMAP messages could cause Thunderbird to crash
+    tag: fixed
+    bugs: [2088362]
+  - note: Finding an unread message could loop endlessly in damaged threads
+    tag: fixed
+    bugs: [2088362]
+  - note: The Quick Filter keyboard shortcut could stop working
+    tag: fixed
+    bugs: [1847432]
+  - note: Compose commands failed when feed articles were displayed as web pages
+    tag: fixed
+    bugs: [2085467]
+  - note: Shift+Space scrolled messages down when focus was in the message list
+    tag: fixed
+    bugs: [2084510]
+  - note: Selecting a message in a thread summary did not scroll it into view
+    tag: fixed
+    bugs: [2085651]
+  - note: Messages with dates outside the supported range displayed incorrect dates
+    tag: fixed
+    bugs: [2086621]
+  - note: Deeply quoted inline OpenPGP messages could cause excessive rendering
+    tag: fixed
+    bugs: [2083155]
+  - note: Changing saved search matching options could insert an invalid search field
+    tag: fixed
+    bugs: [550726]
+  - note: Ctrl+Enter could require two presses to send a message
+    tag: fixed
+    bugs: [2083823]
+  - note: Tab from the Subject field required an extra press to reach the message body
+    tag: fixed
+    bugs: [2084616]
+  - note: Pasting text could unexpectedly send a message
+    tag: fixed
+    bugs: [2086761]
+  - note: Forwarding IMAP messages failed in some folders with spaces in their names
+    tag: fixed
+    bugs: [2088260]
+  - note: OAuth sign-in could fail for providers requiring a trailing redirect URL slash
+    tag: fixed
+    bugs: [2088070]
+  - note: Corrupt message filter files were not recovered during background processing
+    tag: fixed
+    bugs: [2077589]
+  - note: Message filter failures did not identify the specific error
+    tag: fixed
+    bugs: [2087672]
+  - note: Failed filter copy and move actions could be logged as successful
+    tag: fixed
+    bugs: [2087857]
+  - note: Apple Mail import could fail to import messages
+    tag: fixed
+    bugs: [1978740]
+  - note: Extension menu icons could be clipped outside the main window
+    tag: fixed
+    bugs: [2080460]
+  - note: Birthdays without a year were not saved in Google address books
+    tag: fixed
+    bugs: [1820356]
+  - note: New Contact and New List were missing from the address book context menu
+    tag: fixed
+    bugs: [1771788]
+  - note: Editing vCard 3.0 contacts could lose the preferred phone number
+    tag: fixed
+    bugs: [1779864]
+  - note: Some CardDAV birthdays without a year incorrectly displayed the year 1604
+    tag: fixed
+    bugs: [1893804]
+  - note: LDAP address completion could fail for searches containing special characters
+    tag: fixed
+    bugs: [2084301]
+  - note: Photos and other contact data could sync incorrectly with vCard 3.0 servers
+    tag: fixed
+    bugs: [2085713]
+  - note: CardDAV address books could remain stuck syncing after a download failed
+    tag: fixed
+    bugs: [2085713]
+  - note: Command-line message links with percent-encoded characters could fail to open
+    tag: fixed
+    bugs: [2075332]
+  - note: Saving and dragging messages could produce inconsistent filenames
+    tag: fixed
+    bugs: [1140323]
+  - note: Imported messages could be incorrectly treated as feed articles
+    tag: fixed
+    bugs: [2082372]
+  - note: Messages with large address groups could cause excessive processing
+    tag: fixed
+    bugs: [2081101]
+  - note: Opening message files with many From headers could cause excessive processing
+    tag: fixed
+    bugs: [2083198]
+  - note: Displaying messages with many address groups could cause excessive memory use
+    tag: fixed
+    bugs: [2088481]
+  - note: IMAP folder discovery could report errors for existing Trash folders
+    tag: fixed
+    bugs: [2087812]
+  - note: Adding a second Exchange account could show the first account's messages
+    tag: fixed
+    bugs: [2073250]
+  - note: Background IMAP errors could be missing from the Activity Manager
+    tag: fixed
+    bugs: [2077653]
+  - note: Some IMAP folder updates could incorrectly trigger new mail notifications
+    tag: fixed
+    bugs: [2077653]
+  - note: Concurrent Exchange downloads could display the wrong message body
+    tag: fixed
+    bugs: [2083044]
+  - note: Sending messages could incorrectly report an error applying filters
+    tag: fixed
+    bugs: [2083369]
+  - note: Downloading newsgroup headers could request an invalid article range
+    tag: fixed
+    bugs: [2084395]
+  - note: SMTP CRAM-MD5 authentication could fail with some server challenges
+    tag: fixed
+    bugs: [2086828]
+  - note: Cancelling the SMTP password prompt could still attempt authentication
+    tag: fixed
+    bugs: [2086828]
+  - note: Unexpected IMAP responses could disrupt subsequent commands
+    tag: fixed
+    bugs: [2088009]
+  - note: Large compressed IMAP responses could cause excessive memory use
+    tag: fixed
+    bugs: [2088499]
+  - note: Feeds with many attachments or categories could cause excessive processing
+    tag: fixed
+    bugs: [2081766]
+  - note: Creating calendar items from messages with long subjects could be slow
+    tag: fixed
+    bugs: [2083152]
+  - note: Invitations with many recurrence dates could cause excessive processing
+    tag: fixed
+    bugs: [2081532]
+  - note: Some recurring calendar items could cause excessive processing
+    tag: fixed
+    bugs: [2082832]
+  - note: Visual and UX improvements
+    tag: fixed
+    bugs: [1922016, 2082356, 2084554]
